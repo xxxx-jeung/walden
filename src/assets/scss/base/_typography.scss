@@ -1,0 +1,22 @@
+// font
+$SpoqaHanSansNeo700: SpoqaHanSansNeo700, sans-serif;
+$SpoqaHanSansNeo500: SpoqaHanSansNeo500, sans-serif;
+$SpoqaHanSansNeo400: SpoqaHanSansNeo400, sans-serif;
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo400';
+  src: url('../../fonts/SpoqaHanSansNeo-Regular.woff2') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo500';
+  src: url('../../fonts/SpoqaHanSansNeo-Medium.woff2') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo700';
+  src: url('../../fonts/SpoqaHanSansNeo-Bold.woff2') format('truetype');
+  font-weight: 700;
+}

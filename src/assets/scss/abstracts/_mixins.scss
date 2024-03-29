@@ -1,0 +1,217 @@
+@mixin side-menu-active {
+  .router-link-exact-active,
+  .router-link-active {
+    background-color: var(--default-030);
+  }
+}
+
+@mixin side-detail {
+  /* default-070 */
+  color: var(--default-070);
+  /* 14, 18, medium */
+
+  font-family: $SpoqaHanSansNeo500;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  overflow: hidden;
+  /* identical to box height, or 129% */
+  width: 100%;
+
+  a {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    padding: 12px 16px 12px 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.2s;
+    text-overflow: ellipsis;
+
+    width: auto;
+    height: 100%;
+
+    &:hover {
+      background-color: var(--default-040);
+    }
+  }
+
+  @include side-menu-active();
+}
+
+@mixin content-title {
+  font-family: $SpoqaHanSansNeo700;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 27px 20px;
+  line-height: 30px;
+  color: var(--default-080);
+}
+
+@mixin slid-list {
+  overflow: hidden;
+  width: 100%;
+
+  a {
+    align-items: center;
+    border-radius: 4px;
+    /* default-080 */
+    color: var(--default-080);
+    display: flex;
+    gap: 8px;
+    overflow: hidden;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    /* 16, 24, medium */
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    transition: 0.2s;
+    height: 24px;
+
+    &:hover {
+      background-color: var(--default-040);
+    }
+
+    i {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@mixin fade-in-out {
+  /* we will explain what these classes do next! */
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.2s ease;
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
+  }
+}
+
+@mixin dimmed {
+  background-color: rgba(33, 37, 41, 0.5);
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+@mixin popup-top {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .close {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+
+    p {
+      /* 20, 30, bold */
+      font-family: $SpoqaHanSansNeo700;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height, or 150% */
+
+      /* default-080 */
+
+      color: var(--default-080);
+    }
+  }
+
+  .back {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+@mixin popup-main-text {
+  /* 20, 30, bold */
+
+  font-family: $SpoqaHanSansNeo700;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+
+  text-align: center;
+
+  /* default-080 */
+
+  color: var(--default-080);
+  white-space: break-spaces;
+  word-break: keep-all;
+}
+
+@mixin user-detail {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@mixin user-detail-title {
+  font-family: $SpoqaHanSansNeo700;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--default-080);
+}
+
+@mixin item-card {
+  background: var(--white-100, #fff);
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+}
+
+@mixin item-title {
+  display: flex;
+  align-items: center;
+  color: var(--default-080, #495057);
+  font-size: 20px;
+  font-family: $SpoqaHanSansNeo700;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  gap: 8px;
+}
+
+@mixin item-title-sub {
+  color: var(--default-060, #adb5bd);
+  font-size: 12px;
+  font-family: $SpoqaHanSansNeo500;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

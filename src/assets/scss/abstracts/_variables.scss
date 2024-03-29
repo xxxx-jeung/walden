@@ -1,0 +1,51 @@
+//color
+:root {
+  // Grey
+  --default-010: #f8f9fa;
+  --default-020: #f1f3f5;
+  --default-030: #e9ecef;
+  --default-040: #dee2e6;
+  --default-050: #ced4da;
+  --default-060: #adb5bd;
+  --default-070: #868e96;
+  --default-080: #495057;
+  --default-090: #343a40;
+  --default-100: #212529;
+
+  // noGrey
+  --inpsyt-green: #4fd685;
+  --inpsyt-green-060: #96e6b6;
+  --inpsyt-green-030: #caf3da;
+  --inpsyt-green-light: #edfbf3;
+  --inpsyt-red: #ff4d4d;
+  --white-100: #ffffff;
+
+  --cal-chestnut: #c1751c;
+  --cal-carrot: #ff7e20;
+  --cal-orange: #ffb017;
+  --cal-banana: #ffee52;
+  --cal-lime: #a2e34f;
+  --cal-blueberry: #6176e6;
+  --cal-grape: #b995ff;
+  --cal-peach: #ff95c8;
+  --cal-chestnut-light: #ecd6bb;
+  --cal-carrot-light: #ffd8bc;
+  --cal-orange-light: #ffe7b9;
+  --cal-banana-light: #fffacb;
+  --cal-lime-light: #e3f7ca;
+  --cal-blue-berry-light: #d0d6f8;
+  --cal-grape-light: #eadfff;
+  --cal-peach-light: #ffdfef;
+  --cal-carrot-pale: #fff2e9;
+  --cal-blueberry-pale: #eff1fd;
+}
+
+// shadow
+$item-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+// 반응형 노트북
+@mixin laptop {
+  @media (max-height: 960px) {
+    @content;
+  }
+}
